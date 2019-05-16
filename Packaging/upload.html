@@ -1,0 +1,69 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module upload</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>upload</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/pi/Downloads/upload.py">/home/pi/Downloads/upload.py</a></font></td></tr></table>
+    <p><tt>This&nbsp;Python&nbsp;Script&nbsp;uses&nbsp;Adafruit&nbsp;Python&nbsp;DHT&nbsp;Sensor&nbsp;Library&nbsp;to&nbsp;read&nbsp;the&nbsp;DHT&nbsp;<br>
+series&nbsp;of&nbsp;humidity&nbsp;and&nbsp;temperature&nbsp;sensors&nbsp;on&nbsp;a&nbsp;Raspberry&nbsp;Pi&nbsp;3&nbsp;(Model&nbsp;&nbsp;B+).&nbsp;The&nbsp;sensor&nbsp;<br>
+used&nbsp;is&nbsp;the&nbsp;DHT22&nbsp;temperature-humidity&nbsp;sensor.&nbsp;--&gt;&nbsp;https://www.adafruit.com/products/385</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="Adafruit_DHT.html">Adafruit_DHT</a><br>
+<a href="RPi.GPIO.html">RPi.GPIO</a><br>
+<a href="datetime.html">datetime</a><br>
+</td><td width="25%" valign=top><a href="mysql.html">mysql</a><br>
+<a href="os.html">os</a><br>
+<a href="pyrebase.html">pyrebase</a><br>
+</td><td width="25%" valign=top><a href="socket.html">socket</a><br>
+<a href="sys.html">sys</a><br>
+<a href="time.html">time</a><br>
+</td><td width="25%" valign=top><a href="uuid.html">uuid</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-destroy"><strong>destroy</strong></a>()</dt><dd><tt>Function&nbsp;to&nbsp;to&nbsp;clean&nbsp;up&nbsp;all&nbsp;the&nbsp;GPIO&nbsp;ports&nbsp;used&nbsp;in&nbsp;this&nbsp;script.<br>
+It&nbsp;resets&nbsp;ports&nbsp;used&nbsp;in&nbsp;this&nbsp;program&nbsp;back&nbsp;to&nbsp;input&nbsp;mode.<br>
+:return:&nbsp;nothing</tt></dd></dl>
+ <dl><dt><a name="-get_ip"><strong>get_ip</strong></a>()</dt><dd><tt>Function&nbsp;to&nbsp;get&nbsp;the&nbsp;IP&nbsp;address&nbsp;of&nbsp;the&nbsp;Raspberry&nbsp;Pi.<br>
+:return:&nbsp;returns&nbsp;the&nbsp;IP&nbsp;address</tt></dd></dl>
+ <dl><dt><a name="-get_mac"><strong>get_mac</strong></a>()</dt><dd><tt>Function&nbsp;to&nbsp;get&nbsp;the&nbsp;MAC&nbsp;address&nbsp;of&nbsp;the&nbsp;Raspberry&nbsp;Pi.<br>
+:return:&nbsp;returns&nbsp;the&nbsp;MAC&nbsp;address</tt></dd></dl>
+ <dl><dt><a name="-uploadDeviceInformation"><strong>uploadDeviceInformation</strong></a>()</dt><dd><tt>Function&nbsp;to&nbsp;upload&nbsp;or&nbsp;insert&nbsp;the&nbsp;Raspberry&nbsp;Pi&nbsp;information&nbsp;into&nbsp;the&nbsp;database&nbsp;(device&nbsp;table)<br>
+:return:&nbsp;nothing</tt></dd></dl>
+ <dl><dt><a name="-uploadSensorReadings"><strong>uploadSensorReadings</strong></a>()</dt><dd><tt>Function&nbsp;to&nbsp;upload&nbsp;or&nbsp;insert&nbsp;real-time&nbsp;sensor&nbsp;readings&nbsp;of&nbsp;temperature,&nbsp;light&nbsp;intensity&nbsp;and<br>
+humidity&nbsp;into&nbsp;MySQL&nbsp;database.<br>
+:return:&nbsp;nothing</tt></dd></dl>
+ <dl><dt><a name="-uploadToFirebase"><strong>uploadToFirebase</strong></a>()</dt><dd><tt>Function&nbsp;to&nbsp;upload&nbsp;or&nbsp;insert&nbsp;real-time&nbsp;sensor&nbsp;readings&nbsp;of&nbsp;temperature&nbsp;and<br>
+humidity&nbsp;into&nbsp;the&nbsp;Firebase&nbsp;database.&nbsp;It&nbsp;also&nbsp;alerts&nbsp;the&nbsp;user&nbsp;if&nbsp;temperature&nbsp;&gt;&nbsp;25&nbsp;degrees&nbsp;celcius<br>
+or&nbsp;humidity&nbsp;&gt;50%&nbsp;(too&nbsp;humid&nbsp;or&nbsp;warm&nbsp;for&nbsp;the&nbsp;cakes)&nbsp;by&nbsp;turning&nbsp;a&nbsp;red&nbsp;LED&nbsp;on.<br>
+:return:&nbsp;nothing</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>Config</strong> = {'apiKey': 'AIzaSyANky8tRqM9OB-DE7GhGCbsXNrc1miPbi4', 'appId': '1:767798854296:web:daf29694c4517a34', 'authDomain': 'database2-3608a.firebaseapp.com', 'databaseURL': 'https://database2-3608a.firebaseio.com', 'messagingSenderId': '767798854296', 'projectId': 'database2-3608a', 'storageBucket': 'database2-3608a.appspot.com'}<br>
+<strong>LightSensorAnalog</strong> = 3<br>
+<strong>LightSensorDigital</strong> = 2<br>
+<strong>RedLight</strong> = 19<br>
+<strong>cnx</strong> = &lt;mysql.connector.connection.MySQLConnection object&gt;<br>
+<strong>sensor</strong> = 11</td></tr></table>
+</body></html>
