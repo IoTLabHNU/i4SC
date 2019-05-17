@@ -3,10 +3,12 @@ This Python Script uses a light emmitter (laser) and a light detector sensor [Du
 """
 import RPi.GPIO as GPIO
 import time
+from sense_hat import SenseHat
 
 alert_led = 18
 light_sensor = 4
 counter=0
+sense = SenseHat()
 
 def setup():
         """
@@ -25,7 +27,7 @@ def loop():
         prev = False
         current = False
         global counter
-        
+        print ('Counter Program now running')
         while True:
                 prev = current
                 output = bool(GPIO.input(light_sensor))
@@ -35,6 +37,7 @@ def loop():
                 if ((current==True) and (prev ==False)):        #if values switch between True and a False, one object has passed
                         counter=counter+1
                         print ('Counting in Progress '+ str(counter))
+                        sense.show_message(str(counter),scroll_speed=0.02)
                 
                 if output:
                         GPIO.output(alert_led,GPIO.HIGH)       #switch alert led ON      
