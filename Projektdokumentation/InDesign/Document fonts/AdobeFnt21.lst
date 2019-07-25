@@ -1,0 +1,114 @@
+%!Adobe-FontList 1.20
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FoundersGrotesk-Regular
+FamilyName:Founders Grotesk
+StyleName:Regular
+MenuName:Founders Grotesk Regular
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Founders Grotesk
+WritingScript:Roman
+OutlineFileName:/Users/maxpriester/Desktop/gesta/Certificate/Document fonts/FoundersGrotesk-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:54844
+FileModTime:294383254
+NameArray:0,Mac,18,Founders Grotesk Regular
+NameArray:0,Mac,4,Founders Grotesk
+NameArray:0,Win,1,Founders Grotesk Regular
+NameArray:0,Win,16,Founders Grotesk
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/maxpriester/Desktop/gesta/Certificate/Document fonts/AdobeFnt21.lst
+FileLength:2382
+FileModTime:582740604
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:FoundersGrotesk-Semibold
+FamilyName:Founders Grotesk
+StyleName:Semibold
+MenuName:Founders Grotesk Semibold
+StyleBits:0
+WeightClass:600
+WidthClass:5
+AngleClass:0
+FullName:Founders Grotesk Semibold
+WritingScript:Roman
+OutlineFileName:/Users/maxpriester/Desktop/gesta/Certificate/Document fonts/FoundersGrotesk-Semibold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:56580
+FileModTime:294383254
+NameArray:0,Mac,4,Founders Grotesk Semibold
+NameArray:0,Win,1,Founders Grotesk Semibold
+NameArray:0,Win,16,Founders Grotesk
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:LaoMN
+FamilyName:Lao MN
+StyleName:Regular
+MenuName:Lao MN
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Lao MN
+WritingScript:Laotian
+OutlineFileName:/Users/maxpriester/Desktop/gesta/Certificate/Document fonts/Lao MN.ttc
+TTCOffset:32
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:96348
+FileModTime:556235762
+NameArray:0,Mac,18,Lao MN
+NameArray:0,Mac,4,Lao MN
+NameArray:0,Win,1,Lao MN
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:LaoMN-Bold
+FamilyName:Lao MN
+StyleName:Bold
+MenuName:Lao MN
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Lao MN Bold
+WritingScript:Laotian
+OutlineFileName:/Users/maxpriester/Desktop/gesta/Certificate/Document fonts/Lao MN.ttc
+TTCOffset:348
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:96348
+FileModTime:556235762
+NameArray:0,Mac,18,Lao MN Bold
+NameArray:0,Mac,4,Lao MN Bold
+NameArray:0,Win,1,Lao MN
+%EndFont
+
